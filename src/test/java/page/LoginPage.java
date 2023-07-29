@@ -17,8 +17,8 @@ public class LoginPage {
     public void login() {
         methods.click(By.xpath("//div[@class='menu-top-button login']"));
 
-        methods.sendKeys(By.id("login-email"),"mustafa.yildiz.yazilim@gmail.com");
-        methods.sendKeys(By.id("login-password"),"25Erzurum");
+        methods.sendKeys(By.id("login-email"),"kullanici adi (kullanıcı mail degeri girilir)");
+        methods.sendKeys(By.id("login-password"),"Password (kullanıcı password degeri girilir)");
 
         methods.click(By.cssSelector(".ky-btn.ky-btn-orange.w-100.ky-login-btn"));
         methods.waitBySeconds(15);
